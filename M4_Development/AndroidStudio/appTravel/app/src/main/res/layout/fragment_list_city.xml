@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="16dp"
-        android:background="#eee">
+        android:background="#F1F1F1">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:background="#ccc"/>
+            android:src="@mipmap/city_thumb_foto_1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -26,28 +28,55 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000"
-                android:textSize="36dp"
-                android:text="t1" />
+                android:textColor="@color/dark_jungle_green"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:text="New Marlen"
+                fontPath="fonts/Raleway-Medium.ttf"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="#000"
-                android:textSize="16dp"
-                android:text="t2" />
+                android:textColor="@color/old_lavender"
+                android:textSize="15sp"
+                android:text="Burning Desire Golden Key Or Red Herring…"
+                android:layout_marginBottom="5dp"
+                fontPath="fonts/OpenSans-Regular.ttf"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/detail_city_icon_clock"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/old_lavender"
+                    android:textSize="15sp"
+                    android:alpha="0.7"
+                    android:text="11:07PM"
+                    android:paddingStart="10dp"
+                    fontPath="fonts/OpenSans-Regular.ttf"/>
+
+            </LinearLayout>
 
         </LinearLayout>
 
 
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="#ccc"></LinearLayout>
+        android:background="@mipmap/city_div_line"></LinearLayout>
 
 </LinearLayout>

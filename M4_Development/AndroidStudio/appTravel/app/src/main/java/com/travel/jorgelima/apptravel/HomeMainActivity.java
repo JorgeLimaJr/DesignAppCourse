@@ -22,16 +22,18 @@ public class HomeMainActivity extends AppCompatActivity {
     }
 
 
+    public void openActivityListCity(View view) {
+
+        Intent intent = new Intent(this, ListCityActivity.class);
+        startActivity(intent);
+
+    }
+
+
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
 
-    public void openActivityListCity(View view) {
 
-        Intent intent = new Intent(this, ListCityActivity.class);
-
-        startActivity(intent);
-
-    }
 }
