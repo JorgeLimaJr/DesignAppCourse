@@ -51,6 +51,15 @@
                 android:textColor="#000"
                 android:textSize="24sp"
                 android:text="t2"/>
+
+            <Button
+                android:id="@+id/btn_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="openActivityListCity"
+                />
+
         </RelativeLayout>
 
         <RelativeLayout
