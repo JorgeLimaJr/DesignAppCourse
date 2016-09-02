@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.travel.jorgelima.apptravel.HomeMainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+
+    <!--CAPA-->
+    <LinearLayout
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/main_foto_capa"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/munsell"
+                android:textSize="16sp"
+                android:letterSpacing="0.22"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dp"
+                android:text="Encontre seu lugar ideal"
+                fontPath="fonts/OpenSans-LightItalic.ttf"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_above="@id/title"
+                android:textColor="@color/munsell"
+                android:textSize="34sp"
+                android:letterSpacing="0.32"
+                android:text="TRAVEL"
+                fontPath="fonts/Raleway-Bold.ttf"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--BOX1-->
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_weight="11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#ccc">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ecd"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/main_foto_city"
+                android:scaleType="centerCrop"/>
+
+            <Button
+                android:id="@+id/btn_city"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="openActivityListCity"
+                android:text="City"
+                android:textColor="@color/munsell"
+                android:textSize="20sp"
+                android:letterSpacing="0.22"
+                fontPath="fonts/Raleway-Bold.ttf" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ecd"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/main_foto_moutain"
+                android:scaleType="centerCrop"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="Moutain"
+                android:textColor="@color/munsell"
+                android:textSize="20sp"
+                android:letterSpacing="0.22"
+                fontPath="fonts/Raleway-Bold.ttf" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <!--BOX2-->
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_weight="11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#666">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ecd"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/main_foto_farm"
+                android:scaleType="centerCrop"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:text="Farm"
+                android:textColor="@color/munsell"
+                android:textSize="20sp"
+                android:letterSpacing="0.22"
+                fontPath="fonts/Raleway-Bold.ttf" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ecd"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/main_foto_beach"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/imageView" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:onClick="openActivityListCity"
+                android:text="Beach"
+                android:textColor="@color/munsell"
+                android:textSize="20sp"
+                android:letterSpacing="0.22"
+                fontPath="fonts/Raleway-Bold.ttf" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
