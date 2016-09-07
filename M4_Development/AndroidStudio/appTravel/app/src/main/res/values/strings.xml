@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AppTravel</string>
+    <string name="btn_main">INICIAR</string>
+    <string name="btn_account">Create Accont</string>
+    <string name="btn_help">Need Help?</string>
+
+</resources>

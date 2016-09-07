@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="StyleBntMain" parent="android:Widget.TextView">
+                <item name="fontPath">fonts/Releway-SemiBold.ttf</item>
+                <item name="android:textColor">@color/munsell</item>
+                <item name="android:textSize">@dimen/size_text_btn_main</item>
+                <item name="android:textStyle">normal</item>
+                <item name="android:layout_width">match_parent</item>
+                <item name="android:layout_height">70dp</item>
+                <item name="android:textAllCaps">true</item>
+                <item name="android:background">@color/verdigris</item>
+                <item name="android:letterSpacing">0.3</item>
+        </style>
+</resources>
